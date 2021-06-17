@@ -10,7 +10,7 @@ df = pd.DataFrame([("Hungry Howies Pizza","beef",12.99,8,4),
 	columns=("Name","Class","Price","Slices","Dips"))
 
 print(df)
-'''
+
 print(df.count())
 print(df[["Class"]].count())
 print(df.sum())
@@ -21,8 +21,9 @@ print(df[['Slices']].max())
 print(df.mean())
 print(df.median())
 
-'''
+
 #Groupby in action
+
 print(df.groupby('Class').sum())
 
 print(df.groupby('Class').sum().Price)
